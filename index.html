@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swati Vats - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<link rel="stylesheet" href="style.css" class="style" />
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul class="sidemenu" id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p><span>Hello, I'm</span></p>
+                <h1>Swati Vats </h2>
+                    <h1><span>Frontend Developer +<br>Creative Coder</span></h1>
+                    <p id="para">I craft clean, responsive, and beginner-friendly web <br>experiences using modern
+                        frontend
+                        technologies. Passionate <br>about learning, building, and growing in the world of <br>web
+                        development.
+                    </p>
+                    <a href="images\my-cv.pdf" download class="cv">Download CV</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------about--------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/down.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a <span>Frontend Developer</span> with a deep interest in creating clean, user-friendly, and
+                        visually
+                        appealing web interfaces. I specialize in building static and interactive websites using HTML,
+                        CSS, and JavaScript, and I've also worked with Bootstrap to design responsive layouts. Recently,
+                        I've started exploring more advanced concepts to strengthen my skills and become a better
+                        developer.
+                        <br>
+                        <br>
+                        I'm currently looking for internship or project opportunities where I can learn, contribute, and
+                        grow. If you're working on something exciting and think my skills could be a fit, I'd love to
+                        connect and collaborate!
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Technical Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('personal-info')"> Personal Info</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML</span><br>Structure | Semantic | SEO-friendly</li>
+                            <li><span>CSS</span><br>Styling | Responsive | Flexbox</li>
+                            <li><span>JavaScript</span><br>Logic | DOM | Events</li>
+                            <li><span>Bootstrap</span><br>Responsive | UI Design | Components</li>
+                            <li><span>Git & GitHub</span><br>Versioning | Teamwork | Hosting</li>
+                            <li><span>C Language</span><br>Logic | Syntax | Basics</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <p>Frontend Developer Intern</p>
+                            <p><span>Adstalk Media | June 2 - July 2, 2025</span></p>
+                            <li>Built responsive website layouts using HTML, CSS, and JavaScript.</li>
+                            <li>Improved UI design and fixed layout issues.</li>
+                            <li>Gained hands-on experience in real-world development and teamwork</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="personal-info">
+                        <ul>
+                            <li><span>Birthday</span><br>Aug 15, 2007</li>
+                            <li><span>Location</span><br>New Delhi, India</li>
+                            <li><span>Degree</span><br>Diploma in Computer Science</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------portfolio----------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h1>Currency Converter</h1>
+                        <p>Responsive web app using HTML, CSS, JS with real-time currency rates via API.<br>
+                            • 150+ currencies.<br>
+                            • Clean, mobile-friendly UI.
+                        </p>
+                        <a href="https://github.com/Swatii-git/Currency-converter"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2">
+                    <div class="layer">
+                        <h1>Rock Paper Scissors Game</h1>
+                        <p> Interactive game using HTML, CSS, JS with logic & dynamic UI updates.<br>
+                            • User vs Computer.<br>
+                            • Responsive & engaging design.
+                        </p>
+                        <a href="https://github.com/Swatii-git/rock-paper-scissors"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h1>Dragon Game</h1>
+                        <p>Fun obstacle-dodging game using HTML, CSS, JS with animations & keyboard controls.<br>
+                            • Score system + sound effects.<br>
+                            • Responsive UI with game-over screen.
+                        </p>
+                        <a href="https://github.com/Swatii-git/Dragon-Game"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+            <a href="https://github.com/Swatii-git"><button class="btn3 btn btn2 " >View More on GitHub</button></a>
+         
+    </div>
+
+
+    <!-- ----------contact---------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p id="contactme">Available for freelance work, internships, or any creative projects. Feel free to reach out!</p>
+                    <p><i class="fa-solid fa-paper-plane"></i> swativats2240@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 798200275</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/Swatii-git"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/swati-vats-65820b362/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="mailto:swativats2240@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                     
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" row="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>© 2025 Swati Vats. All Rights Reserved.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
